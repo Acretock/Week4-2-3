@@ -17,11 +17,11 @@ int main()
 			fin >> tmp;
 			fin.ignore(1);
 			if (j != (m - 1))
-				cout<< setiosflags(ios_base::left) << setw(10) << setfill(' ' ) << tmp;
-			else cout << tmp;
+				fout << setiosflags(ios_base::left) << setw(10) << setfill(' ' ) << tmp;
+			else fout << tmp;	// last without space
 		}
 		if (i != (n - 1))
-			cout << endl;
+			fout << endl;		//last on same line
 	}
 	return 0;
 }
